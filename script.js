@@ -151,7 +151,7 @@ function setupContactForm() {
             }
             
             // Normally, you would send this to a server
-            alert('Thank you! We will contact you soon.');
+            alert('Thank you! I will contact you soon about AI/ML solutions for your business.');
             emailInput.value = '';
         });
     }

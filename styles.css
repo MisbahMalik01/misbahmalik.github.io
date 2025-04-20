@@ -97,19 +97,34 @@ nav a:hover {
 .intro {
     font-size: 18px;
     margin-bottom: 5px;
+    color: #ccc;
 }
 
 .name {
     color: #FF6B00;
     font-size: 32px;
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
 .profession {
-    font-size: 64px;
+    font-size: 72px;
     font-weight: bold;
-    margin-bottom: 20px;
-    line-height: 1.1;
+    margin-bottom: 0;
+    line-height: 1;
+    text-transform: uppercase;
+    color: white;
+}
+
+.profession::after {
+    content: "Engineer";
+    display: block;
+    font-size: 48px;
+    color: white;
+    margin-top: 0;
+    font-weight: normal;
+    letter-spacing: 1px;
+    line-height: 1.2;
 }
 
 .description {
@@ -278,7 +293,6 @@ nav a:hover {
     justify-content: center;
     gap: 15px;
     margin-bottom: 40px;
-    flex-wrap: wrap;
 }
 
 .filter-btn {
