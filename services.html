@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Services - Misbah Malik</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="images/icons/light-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Misbah Malik</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="images/misbah-malik-cv.png" class="download-btn" download><i class="fas fa-download"></i> Download CV</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="services">
+            <div class="container">
+                <h2 class="section-title center">Services</h2>
+                <p class="services-description">Offering comprehensive AI and machine learning solutions tailored to your business needs, from model development to deployment and monitoring</p>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="images/icons/web-design-icon.png" alt="Machine Learning">
+                        </div>
+                        <h3 class="service-title">Machine Learning</h3>
+                        <p class="service-text">Custom ML solutions for predictive analytics, pattern recognition, and data-driven decision making</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="images/icons/app-design-icon.png" alt="Computer Vision">
+                        </div>
+                        <h3 class="service-title">Computer Vision</h3>
+                        <p class="service-text">Image recognition, object detection, and video analysis systems for various industries</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="images/icons/ui-ux-icon.png" alt="NLP">
+                        </div>
+                        <h3 class="service-title">NLP Solutions</h3>
+                        <p class="service-text">Text analysis, sentiment detection, chatbots, and language understanding systems</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="images/icons/graphic-design-icon.png" alt="MLOps">
+                        </div>
+                        <h3 class="service-title">MLOps & Deployment</h3>
+                        <p class="service-text">End-to-end ML pipeline development, model monitoring, and scalable AI infrastructure</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <h2 class="section-title center">Let's Build Intelligent Solutions Together</h2>
+                    <p class="contact-description">Interested in AI-powered solutions for your business? Contact me to discuss how we can leverage machine learning to solve your specific challenges</p>
+                    
+                    <div class="contact-form">
+                        <input type="email" placeholder="Enter Your Email" class="email-input">
+                        <button class="contact-btn">Contact Me</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-kaggle"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-medium"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Hire Me Modal Popup -->
+    <div class="modal-backdrop">
+        <div class="modal">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <h2 class="modal-title">Let's Work Together</h2>
+            <form class="hire-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="project-type">Project Type</label>
+                    <select id="project-type" class="form-control" required>
+                        <option value="">Select a project type</option>
+                        <option value="machine-learning">Machine Learning</option>
+                        <option value="computer-vision">Computer Vision</option>
+                        <option value="nlp">Natural Language Processing</option>
+                        <option value="mlops">MLOps & Deployment</option>
+                        <option value="other">Other / Custom</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Project Details</label>
+                    <textarea id="message" class="form-control" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Request</button>
+                <div class="submit-message">Your request has been sent successfully! I'll get back to you soon.</div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
