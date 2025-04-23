@@ -1,4 +1,4 @@
-# AI/ML Portfolio Website
+# Misbah Malik - AI/ML Portfolio Website
 
 A clean, modern portfolio website for Misbah Malik, an AI/ML Engineer.
 
@@ -80,10 +80,10 @@ This project is available under the MIT License. Feel free to use it as a templa
 Simply clone this repository and open `index.html` in your web browser to view the website locally. No build process or dependencies required.
 
 ```
-git clone <repository-url>
-cd ai-ml-portfolio
+git clone https://github.com/MisbahMalik01/misbahmalik.github.io.git
+cd misbahmalik.github.io
 ```
 
 ## Contact
 
-For questions or customization requests, please contact [your-email@example.com](mailto:your-email@example.com) 
+For questions or customization requests, please contact [your-email@example.com](mailto:your-email@example.com)
