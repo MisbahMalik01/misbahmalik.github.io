@@ -613,46 +613,6 @@ footer {
     color: #FF6B00;
 }
 
-/* Animation classes */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(1.25em); /* 20px / 16px = 1.25em */
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.fade-in {
-    animation: fadeIn 0.8s ease forwards;
-}
-
-.hero-text.fade-in {
-    animation-delay: 0.2s;
-}
-
-.hero-image.fade-in {
-    animation-delay: 0.4s;
-}
-
-.about-content.fade-in {
-    animation-delay: 0.2s;
-}
-
-.service-card.fade-in {
-    animation-delay: 0.2s;
-}
-
-.project-card.fade-in {
-    animation-delay: 0.2s;
-}
-
-.contact-content.fade-in {
-    animation-delay: 0.2s;
-}
-
 /* Responsive styles */
 @media (max-width: 62em) { /* 992px / 16px = 62em */
     .services-grid {

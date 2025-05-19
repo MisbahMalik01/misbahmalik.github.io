@@ -104,38 +104,37 @@ function setupMobileNav() {
 
 // Function to initialize animations
 function initializeAnimations() {
-    // Add animation classes to hero elements
-    const heroText = document.querySelector('.hero-text');
-    const heroImage = document.querySelector('.hero-image');
-    
-    if (heroText) heroText.classList.add('fade-in');
-    if (heroImage) heroImage.classList.add('fade-in');
-    
-    // Add animation observer for other sections
-    const aboutContent = document.querySelector('.about-content');
-    const serviceCards = document.querySelectorAll('.service-card');
-    const projectCards = document.querySelectorAll('.project-card');
-    const contactContent = document.querySelector('.contact-content');
-    
-    // Create an intersection observer for animations
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('fade-in');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.2 });
-    
-    // Observe elements for animation
-    if (aboutContent) observer.observe(aboutContent);
-    serviceCards.forEach(card => observer.observe(card));
-    projectCards.forEach(card => observer.observe(card));
-    if (contactContent) observer.observe(contactContent);
-    
+    // Removed fade-in animation for hero elements
+    // const heroText = document.querySelector('.hero-text');
+    // const heroImage = document.querySelector('.hero-image');
+    // if (heroText) heroText.classList.add('fade-in');
+    // if (heroImage) heroImage.classList.add('fade-in');
+
+    // Removed fade-in animation for other sections
+    // const aboutContent = document.querySelector('.about-content');
+    // const serviceCards = document.querySelectorAll('.service-card');
+    // const projectCards = document.querySelectorAll('.project-card');
+    // const contactContent = document.querySelector('.contact-content');
+
+    // Removed intersection observer for fade-in animations
+    // const observer = new IntersectionObserver((entries) => {
+    //     entries.forEach(entry => {
+    //         if (entry.isIntersecting) {
+    //             entry.target.classList.add('fade-in');
+    //             observer.unobserve(entry.target);
+    //         }
+    //     });
+    // }, { threshold: 0.2 });
+
+    // Removed observer calls
+    // if (aboutContent) observer.observe(aboutContent);
+    // serviceCards.forEach(card => observer.observe(card));
+    // projectCards.forEach(card => observer.observe(card));
+    // if (contactContent) observer.observe(contactContent);
+
     // Initialize project filtering
     initProjectFilters();
-    
+
     // Trigger skill bar animation
     const aboutSection = document.querySelector('.about');
     if (aboutSection) {
@@ -147,7 +146,7 @@ function initializeAnimations() {
                 }
             });
         }, { threshold: 0.5 });
-        
+
         observer.observe(aboutSection);
     }
 }
